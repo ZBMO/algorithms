@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f250cd7b-f999-4690-a03e-9f1e94797207" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1e3WlHN67BiJpVj8CUou7puoapZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="algorithms" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build algorithms" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="661" y="180" key="#go_build_algorithms" timestamp="1593550937901">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="661" y="180" key="#go_build_algorithms/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593550937901" />
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1593573926974">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926974" />
+    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1593573926972">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926972" />
+    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1593573926971">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926971" />
+    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1593573926973">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926973" />
+  </component>
+</project>
