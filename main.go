@@ -7,9 +7,10 @@ import (
 )
 
 var values = []int{34, 783, 12, 53, 9, 434, 123, 435, 43, 47, 864, 764, 225, 389, 612, 420, 6543, 3, 9367, 133}
+
 func main() {
-	callBubbleSort()
-	//callQuickSort()
+	//callBubbleSort()
+	callQuickSort()
 }
 
 func printResponse(sortedList []int) {
