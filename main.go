@@ -1,26 +1,61 @@
 package main
 
+//notes:
+//time complexity - worst, best
+//in place / out of place?
+//when to use it? when not to use it?
+//what languages use it and where?
+//
+
+//ns = nanosecond - (1 billionth of 1 second) / Time to execute one machine cycle by a 1 GHz microprocessor
+//µs = microsecond - (1 millionth of 1 second) / Time to execute one machine cycle by an Intel 80186 microprocessor
+//ms = millisecond - (1 thousandth of 1 second)
+//cs = centisecond - (1 hundredth of 1 second)
+
 import (
 	bubble "algorithms/bubblesort"
-	quick "algorithms/quicksort"
+	lomuto "algorithms/quicksort/Lomuto"
+	lomutoImproved "algorithms/quicksort/LomutoImproved"
+	hoare "algorithms/quicksort/Hoare"
 	"fmt"
+	"math/rand"
+	"time"
 )
 
-var values = []int{34, 783, 12, 53, 9, 434, 123, 435, 43, 47, 864, 764, 225, 389, 612, 420, 6543, 3, 9367, 133}
+func generateSlice(size int) []int {
+	slice := make([]int, size, size)
+	rand.Seed(time.Now().UnixNano())
+	for i := 0; i < size; i++ {
+		slice[i] = rand.Intn(999) - rand.Intn(999)
+	}
+	return slice
+}
 
 func main() {
-	//callBubbleSort()
-	callQuickSort()
+	var slice = generateSlice(50)
+
+	callBubbleSort(slice)
+
+	//Quicksorts
+	//callLomuto(slice)
+	//callLomutoImproved(slice)
+	//callHoare(slice)
 }
 
 func printResponse(sortedList []int) {
 	fmt.Println("sorted list: ", sortedList)
 }
 
-func callBubbleSort() {
-	printResponse(bubble.BubbleSort(values))
+func callBubbleSort(array []int) {
+	printResponse(bubble.BubbleSort(array))
 }
 
-func callQuickSort() {
-	printResponse(quick.QuickSort(values))
+func callLomuto(array []int) {
+	printResponse(lomuto.Lomuto(array))
+}
+func callLomutoImproved(array []int) {
+	printResponse(lomutoImproved.LomutoImproved(array))
+}
+func callHoare(array []int) {
+	printResponse(hoare.Hoare(array))
 }

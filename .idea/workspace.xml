@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f250cd7b-f999-4690-a03e-9f1e94797207" name="Default Changelist" comment="" />
+    <list default="true" id="f250cd7b-f999-4690-a03e-9f1e94797207" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quicksort/Hoare/Hoare.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quicksort/Lomuto/Lomuto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quicksort/LomutoImproved/LomutoImproved.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numbers" beforeDir="false" afterPath="$PROJECT_DIR$/numbers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quicksort/quicksort.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -17,23 +51,42 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Images" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quicksort/LomutoImproved" />
+      <recent name="$PROJECT_DIR$/quicksort/Lomuto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build quicksort.go">
     <configuration name="go build algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="algorithms" />
       <method v="2" />
     </configuration>
+    <configuration name="go build quicksort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/quicksort/quicksort.go" />
+      <package value="algorithms" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build quicksort.go" />
         <item itemvalue="Go Build.go build algorithms" />
       </list>
     </recent_temporary>
@@ -41,26 +94,54 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="560" y="205" width="800" height="765" key="#Intentions" timestamp="1597373724077">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="560" y="205" width="800" height="765" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1597373724077" />
+    <state x="705" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597375345194">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="705" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1597375345194" />
     <state x="661" y="180" key="#go_build_algorithms" timestamp="1593550937901">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="661" y="180" key="#go_build_algorithms/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593550937901" />
-    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1593573926974">
+    <state x="661" y="181" key="#go_build_quicksort.go" timestamp="1595558738799">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926974" />
-    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1593573926972">
+    <state x="661" y="181" key="#go_build_quicksort.go/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1595558738799" />
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom" timestamp="1593696880664">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926972" />
-    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1593573926971">
+    <state width="1878" height="300" key="GridCell.Tab.0.bottom/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593696880664" />
+    <state width="1878" height="300" key="GridCell.Tab.0.center" timestamp="1593696880663">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926971" />
-    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1593573926973">
+    <state width="1878" height="300" key="GridCell.Tab.0.center/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593696880663" />
+    <state width="1878" height="300" key="GridCell.Tab.0.left" timestamp="1593696880662">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593573926973" />
+    <state width="1878" height="300" key="GridCell.Tab.0.left/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593696880662" />
+    <state width="1878" height="300" key="GridCell.Tab.0.right" timestamp="1593696880664">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="300" key="GridCell.Tab.0.right/0.0.1920.1080/127.1080.1680.1050@0.0.1920.1080" timestamp="1593696880664" />
+    <state x="469" y="179" key="SettingsEditor" timestamp="1596255907667">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1596255907667" />
   </component>
 </project>
