@@ -2,7 +2,6 @@ package Hoare
 
 import (
 	"fmt"
-	"os"
 	"time"
 )
 
@@ -17,30 +16,31 @@ func Hoare(array []int) []int {
 }
 
 func quickSortSplit(array []int, low int, high int) {
-	if (low < high) {
-		var err, newPivotIndex  = partition(array, low, high)
-		if err != nil {fmt.Print(err); os.Exit(1)}
+	if low < high {
+		var partitionIndex = partition(array, low, high)
 
-		quickSortSplit(array, low, newPivotIndex)
-		quickSortSplit(array, newPivotIndex+1, high)
+		//this top call gets stuck in a loop when the partition returned is same as high
+		quickSortSplit(array, low, partitionIndex)
+		quickSortSplit(array, partitionIndex+1, high)
 	}
 }
 
-func partition(array []int, low int, high int) (error, int) {
-	var pivot = array[low]
-	var i, j = low, high
+func partition(array []int, low int, high int) int {
+		var pivot = array[low]
+		var i, j = low, high
 
-	for true {
-		for array[i] < pivot {
-			i++
+		for {
+			for array[i] <= pivot {
+				i++
+			}
+			for array[j] >= pivot {
+				j--
+			}
+			if i >= j {
+				fmt.Println("partition returning j: ", j)
+				return j
+			}
+			array[i], array[j] = array[j], array[i]
 		}
-		for array[j] > pivot {
-			j--
-		}
-		if i>=j {
-			return nil, j
-		}
-		array[i], array[j] = array[j], array[i]
 	}
-	return fmt.Errorf("Error in partition function, unable to create new pivot. "), j
-}
+

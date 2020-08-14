@@ -19,10 +19,10 @@ func Lomuto(array []int) []int {
 
 func quickSortSplit(array []int, low int, high int) {
 	if (low < high) {
-		var newPivot = partition(array, low, high)
+		var partitionIndex = partition(array, low, high)
 
-		quickSortSplit(array, low, newPivot-1)
-		quickSortSplit(array, newPivot+1, high)
+		quickSortSplit(array, low, partitionIndex-1)
+		quickSortSplit(array, partitionIndex+1, high)
 	}
 }
 

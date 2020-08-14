@@ -32,14 +32,14 @@ func generateSlice(size int) []int {
 }
 
 func main() {
-	var slice = generateSlice(50)
+	var slice = generateSlice(40)
 
-	callBubbleSort(slice)
+	//callBubbleSort(slice)
 
-	//Quicksorts
+	//Quicksorts:
 	//callLomuto(slice)
 	//callLomutoImproved(slice)
-	//callHoare(slice)
+	callHoare(slice)
 }
 
 func printResponse(sortedList []int) {
