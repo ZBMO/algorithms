@@ -18,6 +18,7 @@ import (
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
 	hoare "algorithms/quicksort/Hoare"
 	selection "algorithms/selection"
+	merge "algorithms/merge"
 	"fmt"
 	"math/rand"
 	"time"
@@ -37,13 +38,15 @@ func main() {
 
 	//callBubbleSort(slice)
 
+	//callSelection(slice)
+
 //Quicksorts:
 	//callLomuto(slice)
 	//callLomutoImproved(slice)
-	//Hoare not working
-	//callHoare(slice)
 
-	callSelection(slice)
+	//callHoare(slice) (don't)
+
+	callMerge(slice)
 }
 
 func printResponse(sortedList []int) {
@@ -66,4 +69,8 @@ func callHoare(array []int) {
 
 func callSelection(array []int) {
 	printResponse(selection.Selection(array))
+}
+
+func callMerge(array []int) {
+	printResponse(merge.Merge(array))
 }
