@@ -1,0 +1,14 @@
+Static vs dynamic memory allocation
+context: 1 segment (64 x 1024b) / 64kb
+
+memory gets divided between heap, stack & code.
+memory allocated at compile time is stack frame, this is static memory.
+e.g. main() {int a; float b} takes 6 bytes in stack frame
+
+activation records in stack memory are removed / de-allocated after the function
+completes
+
+unlike stack, heap memory is unorganized
+program cannot directly access heap memory, uses pointers
+
+
