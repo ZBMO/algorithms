@@ -8,16 +8,22 @@ import (
 func Merge(array []int) []int {
 	start := time.Now()
 
-	a := []int{1, 3, 6, 7, 10}
-	b := []int{2, 4, 6, 8, 9, 11, 25, 27, 33, 60}
-	fmt.Println(mergeTwo(a, b))
+	newArray := mergeSort(array)
 
 	elapsed := time.Since(start)
 	fmt.Println("Merge sort elapsed time: ", elapsed)
-	return array
+	return newArray
 }
 
-func mergeTwo(a []int, b []int) []int {
+func mergeSort(array []int) []int {
+	if len(array) == 1 {
+		return array
+	}
+	mid := len(array)/2
+	return twoWayMerge(mergeSort(array[:mid]), mergeSort(array[mid:]))
+}
+
+func twoWayMerge(a []int, b []int) []int {
 	var c []int
 	i, j:= 0, 0
 	for i<len(a) && j<len(b) {

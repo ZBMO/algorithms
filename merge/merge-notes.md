@@ -1,12 +1,13 @@
 
 __Merge Sort__
 ---
-in-place
-recursive
+not in-place  
+stable  
+recursive / divide & conquer  
 
-worst-case performance:   
-best-case performance:   
-average-case performance:   
+worst-case performance:  O(n log n) 
+best-case performance:   O(n log n)
+average-case performance: O(n log n)  
 
 
 
@@ -17,7 +18,7 @@ average-case performance:
     
 ---
 ####other:
-
+invented by von Neumann
 
 ---
 ####more info:
