@@ -20,6 +20,7 @@ import (
 	hoare "algorithms/quicksort/Hoare"
 	selection "algorithms/selection"
 	merge "algorithms/merge"
+	radix "algorithms/radix"
 	"fmt"
 	"math/rand"
 	"time"
@@ -48,7 +49,9 @@ func main() {
 
 	//callMerge(slice)
 
-	callCount(slice)
+	//callCount(slice)
+
+	callRadix(slice)
 }
 
 
@@ -80,4 +83,8 @@ func callMerge(array []int) {
 
 func callCount(array []int) {
 	printResponse(count.Count(array))
+}
+
+func callRadix(array []int) {
+	printResponse(radix.Radix(array))
 }

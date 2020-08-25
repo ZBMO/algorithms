@@ -26,7 +26,7 @@ func mergeSort(array []int) []int {
 func twoWayMerge(a []int, b []int) []int {
 	var c []int
 	i, j:= 0, 0
-	for i<len(a) && j<len(b) {
+	for i<len(a) && j < len(b) {
 		if a[i] <= b[j] {
 			c = append(c, a[i])
 			i++
