@@ -24,13 +24,14 @@ func count(array []int) {
 		c[i]++
 	}
 
-	j := 0
-	for index, value := range c {
-		if value > 0 {
-			for x := 1; x <= value; x++ {
-				array[j] = index
-				j++
-			}
+	i, j := 0, 0
+	for i <= max {
+		if c[i] > 0 {
+			array[j] = i
+			j++
+			c[i]--
+		} else {
+			i++
 		}
 	}
 }
