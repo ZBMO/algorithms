@@ -14,14 +14,15 @@ package main
 
 import (
 	bubble "algorithms/bubblesort"
+	bucket "algorithms/bucket"
 	count "algorithms/count"
+	insertion "algorithms/insertion"
+	merge "algorithms/merge"
+	hoare "algorithms/quicksort/Hoare"
 	lomuto "algorithms/quicksort/Lomuto"
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
-	hoare "algorithms/quicksort/Hoare"
-	selection "algorithms/selection"
-	merge "algorithms/merge"
 	radix "algorithms/radix"
-	bucket "algorithms/bucket"
+	selection "algorithms/selection"
 	"fmt"
 	"math/rand"
 	"time"
@@ -43,7 +44,7 @@ func main() {
 
 	//callSelection(slice)
 
-//Quicksorts:
+	//Quicksorts:
 	//callLomuto(slice)
 	//callLomutoImproved(slice)
 	//callHoare(slice) (don't)
@@ -54,9 +55,10 @@ func main() {
 
 	// callRadix(slice)
 
-	callBucket(slice)
-}
+	// callBucket(slice)
 
+	callInsertion(slice)
+}
 
 func printResponse(sortedList []int) {
 	fmt.Println("sorted list: ", sortedList)
@@ -96,3 +98,6 @@ func callBucket(array []int) {
 	printResponse(bucket.Bucket(array))
 }
 
+func callInsertion(array []int) {
+	printResponse(insertion.Insertion(array))
+}
