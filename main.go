@@ -14,13 +14,14 @@ package main
 
 import (
 	bubble "algorithms/bubblesort"
-	"algorithms/count"
+	count "algorithms/count"
 	lomuto "algorithms/quicksort/Lomuto"
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
 	hoare "algorithms/quicksort/Hoare"
 	selection "algorithms/selection"
 	merge "algorithms/merge"
 	radix "algorithms/radix"
+	bucket "algorithms/bucket"
 	"fmt"
 	"math/rand"
 	"time"
@@ -30,13 +31,13 @@ func generateSlice(size int) []int {
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(999) - rand.Intn(1)
+		slice[i] = rand.Intn(20) - rand.Intn(1)
 	}
 	return slice
 }
 
 func main() {
-	var slice = generateSlice(40)
+	var slice = generateSlice(10)
 
 	//callBubbleSort(slice)
 
@@ -51,7 +52,9 @@ func main() {
 
 	//callCount(slice)
 
-	callRadix(slice)
+	// callRadix(slice)
+
+	callBucket(slice)
 }
 
 
@@ -88,3 +91,8 @@ func callCount(array []int) {
 func callRadix(array []int) {
 	printResponse(radix.Radix(array))
 }
+
+func callBucket(array []int) {
+	printResponse(bucket.Bucket(array))
+}
+
