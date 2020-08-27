@@ -15,11 +15,12 @@ package main
 import (
 	bubble "algorithms/bubblesort"
 	"algorithms/count"
+	insertion "algorithms/insertion"
+	merge "algorithms/merge"
+	hoare "algorithms/quicksort/Hoare"
 	lomuto "algorithms/quicksort/Lomuto"
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
-	hoare "algorithms/quicksort/Hoare"
 	selection "algorithms/selection"
-	merge "algorithms/merge"
 	"fmt"
 	"math/rand"
 	"time"
@@ -29,7 +30,7 @@ func generateSlice(size int) []int {
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(999) - rand.Intn(1)
+		slice[i] = rand.Intn(999) - rand.Intn(999)
 	}
 	return slice
 }
@@ -41,16 +42,17 @@ func main() {
 
 	//callSelection(slice)
 
-//Quicksorts:
+	//Quicksorts:
 	//callLomuto(slice)
 	//callLomutoImproved(slice)
 	//callHoare(slice) (don't)
 
 	//callMerge(slice)
 
-	callCount(slice)
-}
+	// callCount(slice)
 
+	callInsertion(slice)
+}
 
 func printResponse(sortedList []int) {
 	fmt.Println("sorted list: ", sortedList)
@@ -80,4 +82,8 @@ func callMerge(array []int) {
 
 func callCount(array []int) {
 	printResponse(count.Count(array))
+}
+
+func callInsertion(array []int) {
+	printResponse(insertion.Insertion(array))
 }
