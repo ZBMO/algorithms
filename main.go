@@ -32,7 +32,7 @@ func generateSlice(size int) []int {
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(20) - rand.Intn(1)
+		slice[i] = rand.Intn(999) - rand.Intn(1)
 	}
 	return slice
 }
@@ -57,7 +57,7 @@ func main() {
 
 	// callBucket(slice)
 
-	callInsertion(slice)
+	callRadix(slice)
 }
 
 func printResponse(sortedList []int) {
