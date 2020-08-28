@@ -14,12 +14,14 @@ package main
 
 import (
 	bubble "algorithms/bubblesort"
-	"algorithms/count"
+	bucket "algorithms/bucket"
+	count "algorithms/count"
 	insertion "algorithms/insertion"
 	merge "algorithms/merge"
 	hoare "algorithms/quicksort/Hoare"
 	lomuto "algorithms/quicksort/Lomuto"
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
+	radix "algorithms/radix"
 	selection "algorithms/selection"
 	"fmt"
 	"math/rand"
@@ -30,13 +32,13 @@ func generateSlice(size int) []int {
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(999) - rand.Intn(999)
+		slice[i] = rand.Intn(999) - rand.Intn(1)
 	}
 	return slice
 }
 
 func main() {
-	var slice = generateSlice(40)
+	var slice = generateSlice(10)
 
 	//callBubbleSort(slice)
 
@@ -49,9 +51,13 @@ func main() {
 
 	//callMerge(slice)
 
-	// callCount(slice)
+	//callCount(slice)
 
-	callInsertion(slice)
+	// callRadix(slice)
+
+	// callBucket(slice)
+
+	callRadix(slice)
 }
 
 func printResponse(sortedList []int) {
@@ -82,6 +88,14 @@ func callMerge(array []int) {
 
 func callCount(array []int) {
 	printResponse(count.Count(array))
+}
+
+func callRadix(array []int) {
+	printResponse(radix.Radix(array))
+}
+
+func callBucket(array []int) {
+	printResponse(bucket.Bucket(array))
 }
 
 func callInsertion(array []int) {
