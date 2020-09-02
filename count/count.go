@@ -12,7 +12,7 @@ func Count(array []int) []int {
 	count(array)
 
 	elapsed := time.Since(start)
-	fmt.Println("Selection sort elapsed time: ", elapsed)
+	fmt.Println("Count sort elapsed time: ", elapsed)
 	return array
 }
 
