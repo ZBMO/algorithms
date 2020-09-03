@@ -23,6 +23,7 @@ import (
 	lomutoImproved "algorithms/quicksort/LomutoImproved"
 	radix "algorithms/radix"
 	selection "algorithms/selection"
+	heap "algorithms/heap"
 	"fmt"
 	"math/rand"
 	"time"
@@ -32,13 +33,13 @@ func generateSlice(size int) []int {
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		slice[i] = rand.Intn(999) - rand.Intn(1)
+		slice[i] = rand.Intn(999) - rand.Intn(999)
 	}
 	return slice
 }
 
 func main() {
-	var slice = generateSlice(10)
+	var slice = generateSlice(40)
 
 	//callBubbleSort(slice)
 
@@ -57,8 +58,11 @@ func main() {
 
 	// callBucket(slice)
 
-	callRadix(slice)
+	//callRadix(slice)
+
+	callHeap(slice)
 }
+
 
 func printResponse(sortedList []int) {
 	fmt.Println("sorted list: ", sortedList)
@@ -100,4 +104,8 @@ func callBucket(array []int) {
 
 func callInsertion(array []int) {
 	printResponse(insertion.Insertion(array))
+}
+
+func callHeap(array []int) {
+	printResponse(heap.Heap(array))
 }
