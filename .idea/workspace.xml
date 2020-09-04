@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f250cd7b-f999-4690-a03e-9f1e94797207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/heap/heap-notes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heap/heap.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count/count.go" beforeDir="false" afterPath="$PROJECT_DIR$/count/count.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/count/count-notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/count/count-notes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,23 +1,20 @@
 
 __Count Sort__
 ---
-fast but consumes a lot of memory 
 
-worst-case performance:  O(n) - linear  
-time complexity - O(n)
 
----
-####benefits:
-- 
+Worst case time -  O(n)  
+Best case time - O(n)  
+Average case time - O(n)  
 
-    
----
-####other:
-need to know the highest value in the array to set the length of the 2nd array
+Need to know the highest value in the array to set the length of the 2nd array
 takes up comparatively more memory
+---
+####Benefits:
 
 ---
-####more info:
-[wikipedia](https://en.wikipedia.org/wiki/Counting_sort)
+####Other:
+
+
 
 
