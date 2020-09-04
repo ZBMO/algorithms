@@ -8,6 +8,7 @@ import (
 func Bucket(array []int) []int {
 	start := time.Now()
 
+
 	bucketSort(array)
 
 	elapsed := time.Since(start)
@@ -19,15 +20,15 @@ func Bucket(array []int) []int {
 func bucketSort(array []int) {
 	
 	//max := getMax(array)
-	//
-	////make bins a slice of slices
-	//bins := [max][]int
-	//
-	//for index, value := range array {
-	//	bins[value] = append(c[i], value)
-	//}
-	//
-	//fmt.Println(bins)
+
+	//make bins a slice of slices
+	bins := [][]int{}
+
+	for _, value := range array {
+		bins[value] = append(bins[value], value)
+	}
+
+	fmt.Println(bins)
 }
 
 

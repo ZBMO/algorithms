@@ -28,7 +28,3 @@ func sweep(numbers []int, j int) bool {
 	}
 	return swapped
 }
-
-//best case / Big-omega O(n) - outer loop executes every time, inner loop never executes
-//worst case / Big-O  O(n^2) - outer loop and inner loop execute every time
-//average case / Big-theta O(n^2) - outer loop executes every time, inner loop executes half the time

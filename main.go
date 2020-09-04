@@ -32,7 +32,7 @@ func generateSlice(size int) []int {
 }
 
 func main() {
-	var slice = generateSlice(40)
+	var slice = generateSlice(10)
 
 	callBubbleSort(slice)
 	//callSelection(slice)
@@ -47,7 +47,7 @@ func main() {
 	// callInsertion(slice)
 	// callHeap(slice)
 
-	//callBucket(slice) - broken
+	callBucket(slice)
 }
 
 
