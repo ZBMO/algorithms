@@ -7,24 +7,19 @@ import (
 
 func BubbleSort(numbers []int) ([]int) {
 	start := time.Now()
-	var n = len(numbers)
-	for j:=n-1; j>0; j-- {
-		if !sweep(numbers, j) {
-			break
+	for i := len(numbers) - 1; i > 0; i-- {
+		swapped := false
+		for j := 0; j < i; j++ {
+			if numbers[j] > numbers[j+1] {
+				numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
+				swapped = true
+			}
 		}
+		if !swapped {break}
 	}
 	elapsed := time.Since(start)
 	fmt.Println("Bubble sort elapsed time: ", elapsed)
 	return numbers
 }
 
-func sweep(numbers []int, j int) bool {
-	swapped := false
-	for k:=0; k<j; k++ {
-		if numbers[k] > numbers[k+1] {
-			numbers[k], numbers[k+1] = numbers[k+1], numbers[k]
-			swapped = true
-		}
-	}
-	return swapped
-}
+
