@@ -17,6 +17,7 @@ import (
 	radix "algorithms/radix"
 	selection "algorithms/selection"
 	heap "algorithms/heap"
+	practice "algorithms/practice"
 	"fmt"
 	"math/rand"
 	"time"
@@ -34,7 +35,8 @@ func generateSlice(size int) []int {
 func main() {
 	var slice = generateSlice(40)
 
-	callBubbleSort(slice)
+	printResponse(practice.Practice(slice))
+	//callBubbleSort(slice)
 	//callSelection(slice)
 	//Quicksorts:
 	//callLomuto(slice)
