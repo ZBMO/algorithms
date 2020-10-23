@@ -16,15 +16,15 @@ func Selection(array []int) []int {
 }
 
 func selectionSort(array []int) {
-	for h, _ := range array {
-		i:= h
-		for j:=h; j<len(array); j++ {
-			if array[j] < array[i] {
-				i=j
+	for i, _ := range array {
+		 min := i
+		for j :=i+1; j<len(array); j++ {
+			if array[j] < array[min] {
+				min = j
 			}
 		}
-		if h != i {
-			array[h], array[i] = array[i], array[h]
+		if min != i {
+			array[min], array[i] = array[i], array[min]
 		}
 	}
 }
