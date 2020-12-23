@@ -28,34 +28,3 @@ func selectionSort(array []int) {
 		}
 	}
 }
-
-func selectionSortCocktail(array []int) {
-	//TODO: fix this
-	for h, _ := range array {
-		var swapped = false
-		i:= h
-		m:= h
-		max:=len(array)-1
-		for j:=h; j<max; j++ {
-			if array[j] < array[i] {
-				i = j
-			}
-			if (array[j] > array[m]) {
-				m = j
-			}
-		}
-		if h != i {
-			swapped = true
-			array[h], array[i] = array[i], array[h]
-		}
-		if m != max {
-			swapped = true
-			array[m], array[max] = array[max], array[m]
-		}
-		max--
-		if swapped == false{
-			return
-		}
-	}
-}
-
